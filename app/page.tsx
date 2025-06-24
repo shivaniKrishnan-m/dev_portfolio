@@ -648,7 +648,7 @@ export default function Portfolio() {
       <div className="hidden lg:block fixed left-8 bottom-0">
         <div className="flex flex-col items-center space-y-6">
           <a
-            // href="https://github.com"
+            href="https://github.com/pugazhendhigm"
             className="text-[#8892b0] hover:text-[#64ffda] transition-colors"
           >
             <Github className="w-5 h-5" />
