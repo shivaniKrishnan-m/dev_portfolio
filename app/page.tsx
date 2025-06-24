@@ -268,10 +268,12 @@ export default function Portfolio() {
             </div>
             <div
               className="relative group w-64 h-64"
-              style={{
-                "--green": "#64ffda",
-                "--green-tint": "rgba(100, 255, 218, 0.2)",
-              }}
+              style={
+                {
+                  "--green": "#64ffda",
+                  "--green-tint": "rgba(100, 255, 218, 0.2)",
+                } as React.CSSProperties
+              }
             >
               <div
                 className="absolute inset-0 rounded-lg border-2"
