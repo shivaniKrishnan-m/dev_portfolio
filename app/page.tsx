@@ -182,7 +182,7 @@ export default function Portfolio() {
               ))}
               <button
                 className="border border-[#64ffda] text-[#64ffda] hover:bg-[#64ffda]/10 px-4 py-2 rounded text-sm transition-colors"
-                onClick={() => window.open("/resume-2025.pdf", "_blank")}
+                onClick={() => window.open("/resume.pdf", "_blank")}
               >
                 Resume
               </button>
