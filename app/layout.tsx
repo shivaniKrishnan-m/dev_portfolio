@@ -1,32 +1,36 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter, JetBrains_Mono } from 'next/font/google';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter, JetBrains_Mono } from "next/font/google";
 
-const inter = Inter({ 
-  subsets: ['latin'],
-  variable: '--font-inter',
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
-const jetbrainsMono = JetBrains_Mono({ 
-  subsets: ['latin'],
-  variable: '--font-jetbrains-mono',
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
 });
 
 export const metadata: Metadata = {
-  title: 'Pugazhendhi GM - Software Engineer',
-  description: 'Software Engineer specializing in building exceptional digital experiences. Currently focused on building accessible, human-centered products with React.js, React Native, TypeScript, and AWS.',
-  keywords: 'Software Engineer, React.js, React Native, TypeScript, AWS, Frontend Developer, Full Stack Developer, JavaScript, Node.js, Python, Web Developer',
-  authors: [{ name: 'Pugazhendhi GM' }],
+  title: "Shivani M - QA Engineer | Web UI Designer",
+  description:
+    "Associate Software Engineer with 2 years of experience in manual, automation, and mobile testing. Passionate about crafting user-friendly UIs and ensuring seamless product quality through efficient testing strategies.",
+  keywords:
+    "QA Engineer, Test Automation, Selenium, Postman, Python, UI Design, Figma, Manual Testing, API Testing, Software Testing, Quality Assurance",
+  authors: [{ name: "Shivani M" }],
   openGraph: {
-    title: 'Pugazhendhi GM - Software Engineer',
-    description: 'Software Engineer specializing in building exceptional digital experiences with React.js, React Native, TypeScript, and AWS.',
-    type: 'website',
-    locale: 'en_US',
+    title: "Shivani M - QA Engineer | Web UI Designer",
+    description:
+      "Associate Software Engineer specializing in quality assurance, test automation, and UI design. Expert in Selenium, Postman, Python, and Figma.",
+    type: "website",
+    locale: "en_US",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Pugazhendhi GM - Software Engineer',
-    description: 'Software Engineer specializing in building exceptional digital experiences.',
+    card: "summary_large_image",
+    title: "Shivani M - QA Engineer | Web UI Designer",
+    description:
+      "QA Engineer specializing in test automation and user-friendly UI design.",
   },
   robots: {
     index: true,
@@ -41,9 +45,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className={`${inter.className} antialiased`}>
-        {children}
-      </body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }

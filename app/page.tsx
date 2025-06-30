@@ -135,7 +135,7 @@ export default function Portfolio() {
               className="relative group w-64 h-64"
               style={{
                 "--green": "#64ffda",
-                "--green-tint": "rgba(100, 255, 218, 0.2)",
+                "--green-tint": "rgba(100, 255, 218, 0.02)",
               } as React.CSSProperties}
             >
               <div
@@ -293,7 +293,7 @@ export default function Portfolio() {
               <div className="p-6">
                 <h3 className="flex items-center text-[#ccd6f6] text-lg font-semibold mb-4">
                   <Code className="w-5 h-5 mr-2 text-[#64ffda]" />
-                  Frontend Development
+                  UI/UX Design
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {skills.frontend.map((skill) => (
@@ -312,10 +312,10 @@ export default function Portfolio() {
               <div className="p-6">
                 <h3 className="flex items-center text-[#ccd6f6] text-lg font-semibold mb-4">
                   <Database className="w-5 h-5 mr-2 text-[#64ffda]" />
-                  Backend Development
+                  Automation & Testing
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {skills.backend.map((skill) => (
+                  {skills.automation.map((skill) => (
                     <span
                       key={skill}
                       className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-[#64ffda] text-[#64ffda] hover:bg-[#64ffda]/10 transition-colors"
@@ -331,7 +331,7 @@ export default function Portfolio() {
               <div className="p-6">
                 <h3 className="flex items-center text-[#ccd6f6] text-lg font-semibold mb-4">
                   <Cloud className="w-5 h-5 mr-2 text-[#64ffda]" />
-                  Cloud & DevOps
+                  Cloud & FinOps
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {skills.cloud.map((skill) => (
@@ -350,7 +350,7 @@ export default function Portfolio() {
               <div className="p-6">
                 <h3 className="flex items-center text-[#ccd6f6] text-lg font-semibold mb-4">
                   <Users className="w-5 h-5 mr-2 text-[#64ffda]" />
-                  Tools & Management
+                  Project Management
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {skills.tools.map((skill) => (
