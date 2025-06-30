@@ -35,16 +35,16 @@ export default function Portfolio() {
     };
   }, []);
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
-  const getIcon = (iconName) => {
+  const getIcon = (iconName: string) => {
     const icons = { Github, Mail, Phone, MapPin, Linkedin };
-    const IconComponent = icons[iconName];
+    const IconComponent = icons[iconName as keyof typeof icons];
     return IconComponent ? <IconComponent className="w-6 h-6 text-[#64ffda]" /> : null;
   };
 
@@ -136,7 +136,7 @@ export default function Portfolio() {
               style={{
                 "--green": "#64ffda",
                 "--green-tint": "rgba(100, 255, 218, 0.2)",
-              }}
+              } as React.CSSProperties}
             >
               <div
                 className="absolute inset-0 rounded-lg border-2"
