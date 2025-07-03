@@ -68,7 +68,7 @@ export default function Portfolio() {
                     activeSection === item.id ? "text-[#64ffda]" : ""
                   }`}
                 >
-                  <span className="text-[#64ffda] mr-1">0{index + 1}.</span>
+                  {/* <span className="text-[#64ffda] mr-1">0{index + 1}.</span> */}
                   {item.name}
                 </button>
               ))}
@@ -86,7 +86,7 @@ export default function Portfolio() {
       {/* Hero Section */}
       <section id="hero" className="min-h-screen flex items-center justify-center px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-[#64ffda] text-lg mb-4">Hi, my name is</div>
+          <div className="text-[#64ffda] text-lg mb-4 mt-20">Hi, my name is</div>
           <h1 className="text-5xl md:text-7xl font-bold text-[#ccd6f6] mb-4">
             {personalInfo.name}.
           </h1>
